@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subir y Analizar Archivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Subir el archivo -->
+        <h1>Subir y Analizar Archivo</h1>
+        <form id="uploadForm" action="http://localhost:5500/upload" method="POST" enctype="multipart/form-data">
+            <input type="file" id="fileInput" name="file" accept=".csv, .txt, .xlsx">
+            <button type="submit">Subir y Analizar</button>
+        </form>
+        <div id="preview">
+            <!-- Vista previa del archivo cargado -->
+        </div>
+        <div id="result">
+            <!-- Resultados del análisis, esto luego lo colocamos-->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
